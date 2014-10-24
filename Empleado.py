@@ -9,7 +9,7 @@ class Empleado:
         self.edad=edad
         self.salario
 
-    def getSalario(self):
+    def get_salario(self):
         return self.salario
 
     def get_dni(self):

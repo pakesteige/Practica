@@ -8,13 +8,13 @@ __author__ = 'francisco'
 class TestDepartamento(TestCase):
     def test_get_salario_total(self):
         empleado1=mock()
-        when(empleado1).getSalario().thenReturn(200)
+        when(empleado1).get_salario().thenReturn(200)
 
         empleado2=mock()
-        when(empleado2).getSalario().thenReturn(100)
+        when(empleado2).get_salario().thenReturn(100)
 
         empleado3=mock()
-        when(empleado3).getSalario().thenReturn(300)
+        when(empleado3).get_salario().thenReturn(300)
 
         departamento = Departamento('hp',2)
         departamento.aniadir_emp(empleado1)

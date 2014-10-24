@@ -12,5 +12,5 @@ class Departamento:
     def get_salario_total(self):
         total=0
         for i in self.lista_emp:
-            total+=i.getSalario()
+            total+=i.get_salario()
         return total
