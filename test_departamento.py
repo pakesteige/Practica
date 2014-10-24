@@ -26,7 +26,7 @@ class TestDepartamento(TestCase):
 
     def test_get_salario_total_mensual(self):
         empleado1=mock(Empleado)
-        when(empleado1).get_salario_mensual().thenReturn(200)
+        when(empleado1).get_salario_mensual().thenReturn(2000)
 
         empleado2=mock(Empleado)
         when(empleado2).get_salario_mensual().thenReturn(100)
