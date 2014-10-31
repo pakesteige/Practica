@@ -1,14 +1,15 @@
 __author__ = 'francisco'
 
+
 class Empleado:
-    def __init__(self,nombre,apellidos,dni,direccion,edad,salario, email):
-        self.nombre=nombre
-        self.apellidos=apellidos
-        self.dni=dni
-        self.direccion=direccion
-        self.edad=edad
-        self.salario=salario
-        self.email=email
+    def __init__(self, nombre, apellidos, dni, direccion, edad, salario, email):
+        self.nombre = nombre
+        self.apellidos = apellidos
+        self.dni = dni
+        self.direccion = direccion
+        self.edad = edad
+        self.salario = salario
+        self.email = email
 
     def get_salario(self):
         return self.salario
@@ -29,5 +30,5 @@ class Empleado:
         return self.direccion
 
     def get_salario_mensual(self):
-        return self.get_salario()/12
+        return self.get_salario() / 12
 
