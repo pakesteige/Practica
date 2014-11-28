@@ -3,9 +3,9 @@ __author__ = 'francisco'
 
 class Empleado:
     """
-        Modela un empleado
-        :author: Francisco Lopez Baena
-        :version: 1
+    Modela un empleado
+    :author: Francisco Lopez Baena
+    :version: 1
     """
 
     def __init__(self, nombre, apellidos, dni, direccion, edad, salario, email):
