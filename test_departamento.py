@@ -7,7 +7,26 @@ __author__ = 'francisco'
 
 
 class TestDepartamento(TestCase):
+    """
+        Test para la clase departamento
+        :author: Francisco Lopez Baena
+        :version: 1
+    """
+
     def test_get_salario_total(self):
+        """
+        descripcion breve: salario total anual
+
+        descripcion detallada: metodo para probar el funcionamiento del salario total anual, creamos tres empleados de tipo mock(Empleados) y
+        le pasamos un valor a get_salario()
+
+        :param empleado1: empleado 1
+        :type: mock
+        :param empleado2: empleado 2
+        :type: mock
+        :param empleado3: empleado 3
+        :type: mock
+        """
         empleado1 = mock(Empleado)
         when(empleado1).get_salario().thenReturn(200)
 
@@ -25,6 +44,19 @@ class TestDepartamento(TestCase):
         self.assertEqual(departamento.get_salario_total(), 600)
 
     def test_get_salario_total_mensual(self):
+        """
+        descripcion breve: salario total mensual
+
+        descripcion detallada: metodo para probar el funcionamiento del salario total mensual, creamos tres empleados de tipo mock(Empleados) y
+        le pasamos un valor a get_salario_mensual()
+
+        :param empleado1: empleado 1
+        :type: mock
+        :param empleado2: empleado 2
+        :type: mock
+        :param empleado3: empleado 3
+        :type: mock
+        """
         empleado1 = mock(Empleado)
         when(empleado1).get_salario_mensual().thenReturn(2000)
 
