@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from mockito import *
 
-from Departamento import *
+from src.Departamento import *
 from src.Empleado import *
 
 
