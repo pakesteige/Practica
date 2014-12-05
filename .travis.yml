@@ -24,4 +24,6 @@ after_success:
 #enviar correo
 notifications:
     email:
-        - paseadordelibros@hotmail.com
+        recipients:
+            - paseadordelibros@hotmail.com
+         on_success: never
