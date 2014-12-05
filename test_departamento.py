@@ -60,4 +60,4 @@ class TestDepartamento(TestCase):
         departamento.aniadir_emp(empleado2)
         departamento.aniadir_emp(empleado3)
 
-        self.assertEqual(departamento.get_salario_total_mensual(), 600)
+        self.assertEqual(departamento.get_salario_total_mensual(), 2400)
