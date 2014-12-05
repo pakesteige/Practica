@@ -27,4 +27,4 @@ notifications:
         recipients:
             - paseadordelibros@hotmail.com
         on_success: never
-        
+
