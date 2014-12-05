@@ -1,0 +1,27 @@
+language: python
+python:
+    - "2.7"
+#instalar las dependencias
+install:
+    - pip install pep8
+    - pip install radon
+    - pip install mockito
+    - pip install pytest pytest-cov
+    - pip install coveralls
+#comando para ejecutar los test
+script:
+    - py.test --cov . --cov-report term-missing
+after_success:
+    - pep8 --statistics -qq ./src
+    - pep8 --statistics -qq ./test
+    - coveralls
+    - radon raw ./src/.
+    - radon raw ./test/.
+    - radon cc ./src/.
+    - radon cc ./test/.
+    - radon mi ./src/.
+    - radon mi ./test/.
+#enviar correo
+notifications:
+    email:
+        - paseadordelibros@hotmail.com
