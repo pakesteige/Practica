@@ -4,6 +4,7 @@ __author__ = 'francisco'
 class Departamento:
     """
         Modela un departamento
+
         :author: Francisco Lopez Baena
         :version: 1
     """
@@ -16,7 +17,6 @@ class Departamento:
 
         :param nombre_depto: nombre del departamento. Le pasamos el nombre por la variable nombre_depto
         :param id_depto: identificador del departamento. Le pasamos el identificador por la variable id_depto
-        :param lista_emp: lista de empleados que tendra el departamento. La creamos vacia
         :return: no devuelve nada
         """
         self.nombre_depto = nombre_depto
@@ -38,7 +38,6 @@ class Departamento:
 
         descripcion detallada: metodo para obtener el salario total de todos los empleados del departamento
 
-        :param total: salario total
         :return: total
         """
         total = 0
@@ -52,7 +51,6 @@ class Departamento:
 
         descripcion detallada: metodo para obtener el nombre del departamento
 
-        :param nombre_detpo: nombre del departamento
         :return: nombre_depto
         """
         return self.nombre_depto
@@ -63,7 +61,6 @@ class Departamento:
 
         descripcion detallada: metodo para obtener el salario total mensual de los empleados del departamento
 
-        :param total: salario mensual total
         :return: total
         """
         total = 0

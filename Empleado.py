@@ -4,6 +4,7 @@ __author__ = 'francisco'
 class Empleado:
     """
     Modela un empleado
+
     :author: Francisco Lopez Baena
     :version: 1
     """
@@ -34,7 +35,6 @@ class Empleado:
     def get_salario(self):
         """
 
-        :param salario: salario del empleado
         :return: salario
         """
         return self.salario
@@ -45,7 +45,6 @@ class Empleado:
 
         descripcion detallada: metodo para obtener el dni del empleado
 
-        :param dni: dni del empleado
         :return: dni
         """
         return self.dni
@@ -56,9 +55,7 @@ class Empleado:
 
         descripcion detallada: metodo para obtener el nombre completo del empleado
 
-        :param nombre: nombre del empleado
-        :param apellidos: apellidos del empleado
-        :return: nombre apellidos, concatenados
+        :return: string
         """
         return self.nombre + " " + self.apellidos
 
@@ -68,7 +65,6 @@ class Empleado:
 
         descripcion detallada: metodo para obtener la edad del empleado
 
-        :param edad: edad del empleado
         :return: edad
         """
         return self.edad
@@ -79,7 +75,6 @@ class Empleado:
 
         descripcion detallada: metodo para obtener el correo electronido del empleado
 
-        :param email: email del empleado
         :return: email
         """
         return self.email
@@ -90,7 +85,6 @@ class Empleado:
 
         descripcion detallada: metodo para obtener la direccion del empleado
 
-        :param direccion: direccion del empleado
         :return: direccion
         """
         return self.direccion
@@ -101,7 +95,7 @@ class Empleado:
 
         descripcion detallada: metodo para obtener el salario al mes del empleado
 
-        :return: get_salario()/12 para obtener el salario en un mes
+        :return: salario mensual
         """
         return self.get_salario() / 12
 
